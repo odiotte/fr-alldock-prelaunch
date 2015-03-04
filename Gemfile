@@ -29,7 +29,7 @@ end
 
 group :production do
 	gem 'rails_12factor'
-	gem 'unicorn'
+	#gem 'unicorn'
 end
 	
 gem 'delayed_job_active_record'

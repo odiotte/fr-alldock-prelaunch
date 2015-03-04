@@ -37,7 +37,7 @@
 		<div class="description brandon">
 			<ul>
 				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra performant.</span> Avec un débit de 2400mA par sortie USB, rechargez un téléphone intelligent de 80% en moins d'une heure.</li>
-				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra élégant.</span> Disponible en noir ou blanc avec fini mat ou lustré ou bien un fini en noyer/bambou.</li>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra élégant.</span> Disponible en noir ou blanc avec fini mat ou bien avec un fini en bambou.</li>
 				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra pratique.</span> Jusqu'a 6 sorties USB compatibles avec la plupart des connecteurs standards comme Lightning, 30-pin, micro-USB, etc.</li>
 			</ul>
 		</div>
@@ -47,11 +47,11 @@
         <div class="share-wrap">
             <p class="why brandon">Ne laissez pas vos <br>amis dans l'ombre!</p>
             <p class="title brandon">INVITEZ VOS AMIS <br>ET ECONOMISEZ</p>
-            <p class="subtitle brandon">Partagez votre lien personnalisé par courriel, Facebook ou Twitter et recevez un rabais sur votre achat de All Dock pour chaque ami inscrit</p>
+            <p class="subtitle brandon">Partagez votre lien personnalisé par courriel, Facebook ou Twitter et recevez un rabais sur votre achat de AllDock pour chaque ami inscrit</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "Lancement de All Dock. Station de recharge USB ultra performante et élégante." %>
+            <% twitter_message = "Lancement de AllDock. Station de recharge USB ultra performante et élégante." %>
             <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=All Dock" class="fb" target="_blank"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=AllDock" class="fb" target="_blank"></a>
                 <div class="sep"></div>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
