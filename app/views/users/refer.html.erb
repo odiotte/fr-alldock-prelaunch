@@ -1,6 +1,6 @@
-﻿<div class="header">
+<div class="header">
     <div class="content">
-        <p class="thanks byline brandon">MERCI DE VOUS ÊTRE INSCRIT</p>
+        <p class="thanks byline brandon">MERCI DE VOUS &#202;TRE INSCRIT</p>
     </div>
 </div>
 
@@ -36,8 +36,8 @@
 		
 		<div class="description brandon">
 			<ul>
-				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra performant.</span> Avec un débit de 2400mA par sortie USB, rechargez un téléphone intelligent de 80% en moins d'une heure.</li>
-				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra élégant.</span> Disponible en noir ou blanc avec fini mat ou bien avec un fini en bambou.</li>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra performant.</span> Avec un d&#233;bit de 2400mA par sortie USB, rechargez un t&#233;l&#233;phone intelligent de 80% en moins d'une heure.</li>
+				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra &#233;l&#233;gant.</span> Disponible en noir ou blanc avec fini mat ou bien avec un fini en bambou.</li>
 				<li><img width="20px" src="<%= asset_path('alldock/check.png') %>"/><span>Ultra pratique.</span> Jusqu'a 6 sorties USB compatibles avec la plupart des connecteurs standards comme Lightning, 30-pin, micro-USB, etc.</li>
 			</ul>
 		</div>
@@ -47,9 +47,9 @@
         <div class="share-wrap">
             <p class="why brandon">Ne laissez pas vos <br>amis dans l'ombre!</p>
             <p class="title brandon">INVITEZ VOS AMIS <br>ET ECONOMISEZ</p>
-            <p class="subtitle brandon">Partagez votre lien personnalisé par courriel, Facebook ou Twitter et recevez un rabais sur votre achat de AllDock pour chaque ami inscrit</p>
+            <p class="subtitle brandon">Partagez votre lien personnalis&#233; par courriel, Facebook ou Twitter et recevez un rabais sur votre achat de AllDock pour chaque ami inscrit</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "Lancement de AllDock. Station de recharge USB ultra performante et élégante." %>
+            <% twitter_message = "Lancement de AllDock. Station de recharge USB ultra performante et &#233;l&#233;gante." %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=AllDock" class="fb" target="_blank"></a>
                 <div class="sep"></div>
@@ -79,7 +79,7 @@
     <div class="page-content">
         <p class="callout brandon">Votre progression:</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Amis inscrits</p><p class="rewards">Économie cumulée</p></li>
+            <li class="title brandon"><p class="friends">Amis inscrits</p><p class="rewards">&#201;conomie cumul&#233;e</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
@@ -115,7 +115,7 @@
         <% else %>
             <p class="place brandon"><span><%= referrals_count %></span> <%= words %> </p>
         <% end %>
-        <p class="check brandon">Vérifiez régulièrement</p>
+        <p class="check brandon">V&#233;rifiez r&#233;guli&#232;rement</p>
 
         <div class="policy brandon"><a href="/privacy-policy" target="_blank">Politiques</a></div>
     </div>
